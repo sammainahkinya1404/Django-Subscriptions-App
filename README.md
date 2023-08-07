@@ -1,2 +1,2 @@
 # Django-Subscriptions-App
-These is a App I use a  developer to Test my Features on my Main Apps
+This is an App ,which I use a  developer to test my Features of  Django websites,when developing them.

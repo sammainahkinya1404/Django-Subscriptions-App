@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>M-Pesa Payment Form</title>
+</head>
+<body>
+    <h1>Select an item to purchase:</h1>
+    <form method="post">
+        {% csrf_token %}
+        <select name="item">
+            {% for item in items %}
+            <option value="{{ item }}">{{ item }}</option>
+            {% endfor %}
+        </select><br>
+        Amount: <input type="text" name="amount"><br>
+        Phone Number: <input type="text" name="phone_number"><br>
+        <button type="submit">Pay with M-Pesa</button>
+    </form>
+</body>
+</html>
